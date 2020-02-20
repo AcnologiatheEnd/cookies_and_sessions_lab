@@ -5,7 +5,8 @@ class ProductsController < ApplicationController
   end
   
   def add_item_to_cart
-    cart << params[:product]
+    binding.pry
+    cart << params[:product_name]
     render :index
   end
 end
